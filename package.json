@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/AshotSimonyan/firstRepairWebsite/issues"
   },
-  "homepage": "https://github.com/AshotSimonyan/firstRepairWebsite#readme"
+  "homepage": "https://github.com/AshotSimonyan/firstRepairWebsite#readme",
+  "dependencies": {
+    "bootstrap-4-grid": "^3.2.0",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
+  }
 }

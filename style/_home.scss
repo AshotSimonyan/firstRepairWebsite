@@ -1,0 +1,169 @@
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    max-width: 200px;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.social-list {
+    display: flex;
+    li {
+        margin-left: 25px;
+        a {
+            display: block;
+
+            .fa {
+                color: $color-secondary;
+                margin-right: 5px;
+                font-size: 24px;
+                vertical-align: middle;
+            }
+
+            span {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.main-header {
+    background-color: $color-primary;
+    text-align: right;
+}
+
+.main-nav {
+    display: inline-block;
+    ul {
+        display: flex;
+
+        li {
+            a {
+                display: block;
+                padding: 12px 15px;
+                color: #fff;
+                transition: all .3s;
+
+                &:hover {
+                    color: $color-secondary;
+                }
+
+            }
+        }
+    }
+
+}
+
+.banner {
+    position: relative;
+    padding: 50px;
+}
+
+.banner-carousel {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+
+    h3 {
+        padding: 20px;
+        font-size: 32px;
+
+    }
+}
+
+/*forms*/
+.banner-form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+
+    input[type='text'], textarea  {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #dcdcdc;
+        font-size: 16px;
+    }
+    textarea {
+        resize: none;
+        height: 80px;
+        display: block;
+    }
+
+}
+
+.btn {
+    border: none;
+    box-shadow: inset 0px 0px 0px 100px $color-secondary;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    position: relative;
+    padding: 0 1.4em;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section {
+    padding: 70px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.img-list {
+    li {
+        display: inline-block;
+    }
+}
+.brand-img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.why-choose {
+    padding: 70px 0;
+    background-size: cover;
+    background: url("../assets/images/sections/why-choose.jpg") no-repeat fixed center center;
+
+    .img-list {
+        padding-top: 70px;
+        img {
+            width: 70px;
+        }
+        h4 {
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
