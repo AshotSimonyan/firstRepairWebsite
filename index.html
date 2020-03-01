@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
     <title>Document</title>
 
 
-    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
 
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css"  href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="top-header">
-                <a href="#" class="logo"><img src="assets/images/logo.png" alt="Appliance Repair city"></a>
+                <a href="#" class="logo"><img src="assets/images/logo.png" alt="Appliance Repair city" /></a>
                 <ul class="social-list">
                     <li>
                         <a href="#">
@@ -45,16 +48,17 @@
                 <nav class="main-nav">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#about">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#why-we">Why Choose Us</a>
                         </li>
                         <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
+                            <a href="#feedback">Feedback</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,7 +66,7 @@
         </div>
 
     </header>
-    <section class="banner">
+    <section id="about" class="banner">
         <div class="banner-carousel">
             <div class="home-carousel">
                 <img src="assets/images/banner-img/banner1.jpg" alt="">
@@ -74,31 +78,34 @@
             <div class="banner-content">
                 <div class="row justify-content-between">
                     <div class="col-sm-5">
-                        <h3 class="bg-secondary color-white mb-5">Cape Cod Appliance Service, Your Appliance Repair and Service Experts</h3>
+                        <h3 class="bg-secondary color-white mb-5">Cape Cod Appliance Service, Your Appliance Repair and
+                            Service Experts</h3>
                         <h3 class="bg-primary color-white">Same Day Service</h3>
                     </div>
                     <div class="col-sm-5">
                         <form action="" class="banner-form">
                             <h3>Contact Us for Quick Repair Service</h3>
                             <div class="form-control text-truncate">
-                                <input type="text" placeholder="Name" />
+                                <input onchange="onInputChange(this.id, this.value)" type="text" id="name" value=""
+                                    placeholder="Name" />
                             </div>
                             <div class="form-control">
-                                <input type="text" placeholder="Email" />
+                                <input onchange="onInputChange(this.id, this.value)" type="text" id="email" value=""
+                                    placeholder="Email" />
                             </div>
                             <div class="form-control">
-                                <input type="text" placeholder="Phone" />
+                                <input onchange="onInputChange(this.id, this.value)" type="text" id="phone" value=""
+                                    placeholder="Phone" />
                             </div>
                             <div class="form-control">
-                                <textarea type="text" placeholder="Phone"></textarea>
+                                <textarea onchange="onInputChange(this.id, this.value)" type="text" id="message"
+                                    value="" placeholder="Message"></textarea>
                             </div>
                             <button class="btn btn-primary" type="submit">Contact Us Now</button>
 
                         </form>
                     </div>
                 </div>
-
-
 
 
             </div>
@@ -110,51 +117,80 @@
         <div class="container sm">
             <h2 class="section-title">We Service <span>All Major</span> Brands</h2>
             <ul class="row img-list justify-content-center align-items-center">
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/sub-zero.svg"  alt=""></div></li>
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/kitchenAid.svg" alt=""></div></li>
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/la-cornue.svg" alt=""></div></li>
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/monogram.svg" alt=""></div></li>
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/wolf.svg" alt=""></div></li>
-                <li class="col-sm-3"><div class="brand-img"><img src="assets/images/brands/viking.svg" alt=""></div></li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/sub-zero.svg" alt=""></div>
+                </li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/kitchenAid.svg" alt=""></div>
+                </li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/la-cornue.svg" alt=""></div>
+                </li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/monogram.svg" alt=""></div>
+                </li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/wolf.svg" alt=""></div>
+                </li>
+                <li class="col-sm-3">
+                    <div class="brand-img"><img src="assets/images/brands/viking.svg" alt=""></div>
+                </li>
             </ul>
 
         </div>
     </section>
 
-    <section class="section why-choose text-center">
+    <section id="why-we" class="section why-choose text-center">
         <div class="container sm">
             <h2 class="color-white section-title">Why Choose Cape Cod Appliance Service?</h2>
-            <p class="color-white">We provide expert repair services for refrigerators, dishwashers, washers, dryers, built-in microwave ovens, ranges, wall ovens and vent hoods, ice makers, wine coolers and trash compactors. We offer free estimates for dryer vent cleaning and replacement services. Cape Cod Appliance Service specializes in high end appliance repair. Our outstanding services were recognized with the 2015 Bosch Servicer of the Year Award. We are committed to being environmentally friendly and our technicians drive late model flex fuel vans and recycle all scrap metal and packaging from parts and appliances.</p>
+            <p class="color-white">We provide expert repair services for refrigerators, dishwashers, washers, dryers,
+                built-in microwave ovens, ranges, wall ovens and vent hoods, ice makers, wine coolers and trash
+                compactors.
+                We offer free estimates for dryer vent cleaning and replacement services. Cape Cod Appliance Service
+                specializes in high end appliance repair. Our outstanding services were recognized with the 2015 Bosch
+                Servicer of the Year Award. We are committed to being environmentally friendly and our technicians drive
+                late model flex fuel vans and recycle all scrap metal and packaging from parts and appliances.</p>
 
             <ul class="row img-list justify-content-center align-items-end">
                 <li class="col-sm-3">
-                    <img src="assets/images/appliances/dishwasher.png"  alt="">
+                    <img src="assets/images/appliances/dishwasher.png" alt="">
                     <h4>Dishwashers</h4>
                 </li>
                 <li class="col-sm-3">
-                    <img src="assets/images/appliances/refrigerator.png"  alt="">
+                    <img src="assets/images/appliances/refrigerator.png" alt="">
                     <h4>Refrigerators</h4>
                 </li>
                 <li class="col-sm-3">
-                    <img src="assets/images/appliances/stove.png"  alt="">
+                    <img src="assets/images/appliances/stove.png" alt="">
                     <h4>Stoves</h4>
                 </li>
                 <li class="col-sm-3">
-                    <img src="assets/images/appliances/washing-machine.png"  alt="">
+                    <img src="assets/images/appliances/washing-machine.png" alt="">
                     <h4>Washing Machines</h4>
                 </li>
             </ul>
         </div>
 
     </section>
-    <section class="section">
+    <section id="services" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <h2 class="section-title text-left"><span class="color-primary">Service at Cape Cod Appliance Service </span>
+                    <h2 class="section-title text-left"><span class="color-primary">Service at Cape Cod Appliance
+                            Service </span>
                         <br> <span class="color-secondary">Is Unmatched</span></h2>
-                    <p>Your phone call to Cape Cod Appliance will be answered personally; you will never be placed in a computerized phone tree or sent to voicemail. We have a 24-hour answering service for any emergency. When your Bosch, Sub Zero or other high-end appliance is broken, our customer service reps will schedule a fast and efficient service call with our factory trained technicians. We will swiftly resolve your appliance issues with same day service for all makes including Sub Zero repair. Our easily recognized Cape Cod Appliance service vans are stocked with factory certified parts and we try to repair and restore your appliance with a single service call. All of our work and parts are guaranteed.</p>
-                    <button class="btn btn-primary mt-4" type="submit">Contact Us Today</button>
+                    <p>Your phone call to Cape Cod Appliance will be answered personally; you will never be placed in a
+                        computerized phone tree or sent to voicemail. We have a 24-hour answering service for any
+                        emergency.
+                        When your Bosch, Sub Zero or other high-end appliance is broken, our customer service reps will
+                        schedule a fast and efficient service call with our factory trained technicians. We will swiftly
+                        resolve your appliance issues with same day service for all makes including Sub Zero repair. Our
+                        easily recognized Cape Cod Appliance service vans are stocked with factory certified parts and
+                        we
+                        try to repair and restore your appliance with a single service call. All of our work and parts
+                        are
+                        guaranteed.</p>
+                    <a href="#about"><button class="btn btn-primary mt-4" type="submit">Contact Us Today</button></a>
                 </div>
                 <div class="col-sm-5 text-right">
                     <div class="max-300 d-inline-block">
@@ -168,14 +204,173 @@
         </div>
     </section>
 
-    <section class="section testimonial">
+    <section id="feedback" class="section testimonial">
+        <div class="container">
+            <h2 class="section-title text-center">
+                <span class="color-white">What Others Are Saying? </span>
+            </h2>
+            <div class="repair-image flex justify-content-center">
+                <span></span>
+                <img src="./assets/images/appliances/icon-repair.png" alt="repair image">
+                <span></span>
+            </div>
+            <div class="tetimonial-carousel-main">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-card">
+                        <p>
+                            My Asko dryer is back up and running with a new belt and I am one happy camper. I have
+                            been
+                            a very satisfied customer of Cape Cod
+                            Appliance for 13 years and would never think of using any other service company.
+                            Professional, on time, neat and pleasant service men. Thank you again for always being
+                            there
+                            for us.
+                        </p>
+                        <strong class="text-center d-block">
+                            Ricky Hubbard
+                        </strong>
 
+                    </div>
+                    <div class="testimonial-card">
+                        <p>
+                            "Bob just came out for a repair and went above and beyond for me. Our dishwasher motor
+                            died
+                            3 days before thanksgiving so I purchased a new one and decided to keep the broken one
+                            for
+                            my shop. The broken one was outside and of course the weather was freezing today, I felt
+                            horrible he had to be outside fixing the dishwasher but he was happy to do it! He was
+                            very
+                            fast and even offered/ helped me move it back into our storage area so the water
+                            wouldn't
+                            freeze in it. Thank you so much!“
+                        </p>
+                        <strong class="text-center d-block">
+                            Ricky Hubbard
+                        </strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>
+                            My Asko dryer is back up and running with a new belt and I am one happy camper. I have
+                            been
+                            a very satisfied customer of Cape Cod
+                            Appliance for 13 years and would never think of using any other service company.
+                            Professional, on time, neat and pleasant service men. Thank you again for always being
+                            there
+                            for us.
+                        </p>
+                        <strong class="text-center d-block">
+                            Ricky Hubbard
+                        </strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>
+                            "Bob just came out for a repair and went above and beyond for me. Our dishwasher motor
+                            died
+                            3 days before thanksgiving so I purchased a new one and decided to keep the broken one
+                            for
+                            my shop. The broken one was outside and of course the weather was freezing today, I felt
+                            horrible he had to be outside fixing the dishwasher but he was happy to do it! He was
+                            very
+                            fast and even offered/ helped me move it back into our storage area so the water
+                            wouldn't
+                            freeze in it. Thank you so much!“
+                        </p>
+                        <strong class="text-center d-block">
+                            Ricky Hubbard
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-element">
+                    <div class="footer-title">
+                        <h3>
+                            Quick Links
+                        </h3>
+                        <span class="title-seperator"></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#why-we">Why Choose Us</a>
+                            </li>
+                            <li>
+                                <a href="#feedback">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-element">
+                    <div class="footer-title">
+                        <h3>
+                            Contact Info
+                        </h3>
+                        <span class="title-seperator"></span>
+                    </div>
+                    <div>
+                        <ul class="contact-social">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>(508) 888-2400</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <span>info@capecodapplianceservice.com</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock"></i>
+                                <span>
+                                    Office Hours
+                                    8:30 am - 4:30 pm
+                                    24/7 Emergency Answering Service
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-element">
+                    <div class="footer-title">
+                        <h3>
+                            Here We Are
+                        </h3>
+                        <span class="title-seperator"></span>
+                    </div>
+                    <!-- <div>
+                        <div className="mapouter">
+                            <div className="gmap_canvas">
+                                <iframe title="location" width="100%" height="300"
+                                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Moskovyan%2031+(Crea.tech)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                                    scrolling="no" />
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
 
+            <div class="footer-bottom">
+                © <span id="current-year"> </span>
+                Cape Cod Appliance Service | All Rights Reserved | Designed &
+                Developed
+                By
+                Holly People
+            </div>
+        </div>
+    </footer>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
